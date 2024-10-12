@@ -1,0 +1,97 @@
+Encapsulation means bundling data (variables) and methods 
+(functions) that work on that data into a single unit, 
+called a class. It also involves controlling access to 
+the data to protect it from unintended modifications.
+
+class Car {
+    // Private variables (encapsulated data)
+    private String color;
+    private int speed;
+
+    // Constructor
+    public Car(String color, int speed) {
+        this.color = color;
+        this.speed = speed;
+    }
+
+    // Getter method for color
+    public String getColor() {
+        return color;
+    }
+
+    // Setter method for speed
+    public void setSpeed(int speed) {
+        if (speed > 0) {  // Control access to the data
+            this.speed = speed;
+        }
+    }
+}
+
+Abstraction means simplifying complex systems by only 
+showing the important details and hiding the background 
+processes.
+
+class RemoteControl {
+    // Method to turn on the TV
+    public void turnOnTV() {
+        System.out.println("TV is now ON.");
+    }
+    
+    // Method to turn off the TV
+    public void turnOffTV() {
+        System.out.println("TV is now OFF.");
+    }
+}
+
+Inheritance allows one class (child class) 
+to inherit properties and methods from 
+another class (parent class), promoting code reuse.
+
+// Parent class
+class Animal {
+    public void makeSound() {
+        System.out.println("Animal makes a sound.");
+    }
+}
+// Child class (inherits from Animal)
+class Dog extends Animal {
+    public void makeSound() {
+        System.out.println("Dog barks.");
+    }
+}
+
+
+Polymorphism allows one method to have different 
+forms depending on the object calling it. In Java, 
+polymorphism is often achieved through method 
+overriding or method overloading.
+
+class Animal {
+    public void makeSound() {
+        System.out.println("Animal makes a sound.");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Dog barks.");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Cat meows.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();  // Dog is treated as an Animal
+        Animal myCat = new Cat();  // Cat is treated as an Animal
+        
+        myDog.makeSound();  // Outputs: Dog barks.
+        myCat.makeSound();  // Outputs: Cat meows.
+    }
+}
