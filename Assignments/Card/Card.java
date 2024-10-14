@@ -1,4 +1,5 @@
 package Assignments.Card;
+
 public class Card {
 
     public enum Suit {
@@ -82,21 +83,4 @@ public class Card {
         return value + " of " + suit;
     }
 
-    public static void main(String[] args) {
-        Card card1 = new Card(Suit.HEARTS, Value.ACE);
-        Card card2 = new Card(Suit.SPADES, Value.KING);
-        Card card3 = new Card(Suit.DIAMONDS, Value.TWO);
-        
-        System.out.println("Card 1: " + card1);
-        System.out.println("Card 2: " + card2);
-        System.out.println("Card 3: " + card3);
-
-        System.out.println("Card 1 is higher than Card 2: " + card1.isHigher(card2));
-        System.out.println("Card 1 is higher than Card 2 with trump SPADES: " + card1.isHigher(card2, Suit.SPADES));
-        System.out.println("Card 1 is the same suit as Card 2: " + card1.sameSuit(card2));
-        System.out.println("Card 1 is the same value as Card 2: " + card1.sameValue(card2));
-        System.out.println("Card 1 is the same value as Card 1: " + card1.sameValue(card1));
-
-   
-    }
 }
