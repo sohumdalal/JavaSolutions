@@ -72,26 +72,5 @@ public class UnoCard {
         return false;
     }
 
-    public static void main(String[] args) {
-        UnoCard card1 = new UnoCard(Color.RED, Value.FIVE);
-        UnoCard card2 = new UnoCard(Color.GREEN, Value.FIVE);
-        UnoCard card3 = new UnoCard(Color.BLACK, Value.WILD);
-        UnoCard card4 = new UnoCard(Color.YELLOW, Value.SKIP);
-        UnoCard card5 = new UnoCard(Color.YELLOW, Value.SKIP);
-        UnoCard card6 = new UnoCard(Color.YELLOW, Value.SKIP);
-        UnoCard card7 = new UnoCard(Color.YELLOW, Value.SKIP);
-        UnoCard card8 = new UnoCard(Color.YELLOW, Value.SKIP);
-
-        System.out.println("Card 1: " + card1);
-        System.out.println("Card 2: " + card2);
-        System.out.println("Card 3: " + card3);
-        System.out.println("Card 4: " + card4);
-
-
-        System.out.println("Card 1 can be played on Card 4: " + card1.legalNext(card4));
-        System.out.println("Card 2 can be played on Card 1: " + card2.legalNext(card1));
-        System.out.println("Card 3 can be played on Card 1: " + card3.legalNext(card1));
-        System.out.println("Card 4 can be played on Card 1: " + card4.legalNext(card1));
-        System.out.println("Card 7 can be played on Card 8: " + card7.legalNext(card8));
-    }
+   
 }
