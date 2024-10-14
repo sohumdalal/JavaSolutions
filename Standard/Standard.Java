@@ -5,6 +5,7 @@ import java.io.File;
 
 public class Standard {
 
+    //used in Mathfunc
     public static int[] getTwoNumbers() {
 
         Scanner scanner = new Scanner(System.in);
@@ -19,6 +20,7 @@ public class Standard {
         return new int[] { a1, b1 };
     }
 
+    //used in Mathfunc
     public static int[] targetLowUpper() {
         Scanner scanner = new Scanner(System.in);
 
@@ -33,6 +35,7 @@ public class Standard {
         return new int[] { target, low, high };
     }
 
+    //from teacher video
     public static String AskQuestion(String Question) {
         String output = " ";
         Scanner UserInput = new Scanner(System.in);
@@ -41,6 +44,7 @@ public class Standard {
         return output;
     }
 
+    //from teacher video
     public static int AskIntQuestion(String Question) {
         int output = 0;
         String UserAnswer = AskQuestion(Question);
@@ -53,6 +57,7 @@ public class Standard {
         return output;
     }
 
+    //from teacher video
     public static String ReadAllText(String Path) {
         // declare and intialize all necessary variables
         String output = "";
@@ -72,6 +77,7 @@ public class Standard {
 
     }
 
+     //from teacher video
     public static String [][] ReadCSVText(String Path) {
      String RawData = ReadAllText(Path);
      String [] lines = RawData.split("\n");

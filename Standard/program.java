@@ -7,7 +7,5 @@ public class program
        System.out.println(myData[0]);
        System.out.println(myData.length);
        System.out.println(myData[2][2]);
-
-
     }
 }
