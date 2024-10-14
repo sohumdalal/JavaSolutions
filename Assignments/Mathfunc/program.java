@@ -1,4 +1,6 @@
 package Assignments.Mathfunc;
+
+import Standard.Standard;
 import java.util.Scanner;
 
 public class program {
@@ -19,39 +21,25 @@ public class program {
 
         switch (choice) {
             case 1:
-                System.out.print("Enter first number: ");
-                int a1 = scanner.nextInt();
-                System.out.print("Enter second number: ");
-                int b1 = scanner.nextInt();
-                System.out.println("Largest: " + Mathfunc.getLargest(a1, b1));
+                int[] numbers = Standard.getTwoNumbers(); // Get the two numbers from input
+                int largest = Mathfunc.getLargest(numbers[0], numbers[1]); // Call the method to get the largest number
+                System.out.println("Largest: " + largest); // Print the result
                 break;
 
             case 2:
-                System.out.print("Enter first number: ");
-                int a2 = scanner.nextInt();
-                System.out.print("Enter second number: ");
-                int b2 = scanner.nextInt();
-                System.out.println("Smallest: " + Mathfunc.getSmallest(a2, b2));
+                numbers = Standard.getTwoNumbers(); // Get the two numbers from input
+                int smallest = Mathfunc.getLargest(numbers[0], numbers[1]); // Call the method to get the largest number
+                System.out.println("smallest: " + smallest); // Print the result
                 break;
 
             case 3:
-                System.out.print("Enter target number: ");
-                int target = scanner.nextInt();
-                System.out.print("Enter lower bound: ");
-                int low = scanner.nextInt();
-                System.out.print("Enter upper bound: ");
-                int high = scanner.nextInt();
-                System.out.println("IsBetween: " + Mathfunc.isBetween(target, low, high));
+                numbers = Standard.targetLowUpper();
+                System.out.println("IsBetween: " + Mathfunc.isBetween(numbers[0], numbers[1], numbers[2]));
                 break;
 
             case 4:
-                System.out.print("Enter target number: ");
-                int targetClamp = scanner.nextInt();
-                System.out.print("Enter lower bound: ");
-                int lowClamp = scanner.nextInt();
-                System.out.print("Enter upper bound: ");
-                int highClamp = scanner.nextInt();
-                System.out.println("Clamped value: " + Mathfunc.clamp(targetClamp, lowClamp, highClamp));
+                numbers = Standard.targetLowUpper();
+                System.out.println("Clamped value: " + Mathfunc.clamp(numbers[0], numbers[1], numbers[2]));
                 break;
 
             case 5:
