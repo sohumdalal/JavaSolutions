@@ -1,4 +1,4 @@
-package Uno;
+package Assignments.Uno;
 
 public class UnoCard {
     

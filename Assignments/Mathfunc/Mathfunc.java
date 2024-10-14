@@ -1,4 +1,4 @@
-package Mathfunc;
+package Assignments.Mathfunc;
 
 
 public class Mathfunc {

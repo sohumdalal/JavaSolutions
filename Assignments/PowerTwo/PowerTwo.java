@@ -1,4 +1,4 @@
-package PowerTwo;
+package Assignments.PowerTwo;
 
 public class PowerTwo {
 

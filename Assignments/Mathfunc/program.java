@@ -1,4 +1,4 @@
-package Mathfunc;
+package Assignments.Mathfunc;
 import java.util.Scanner;
 
 public class program {

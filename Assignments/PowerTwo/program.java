@@ -1,4 +1,4 @@
-package PowerTwo;
+package Assignments.PowerTwo;
 import java.util.Scanner;
 
 public class program {

@@ -1,4 +1,4 @@
-package Grader;
+package Assignments.Grader;
 
 
 public class grader {
