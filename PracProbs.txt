@@ -1,0 +1,44 @@
+Easy (5 Challenges)
+
+Sum of an Array
+Write a program that takes an array of integers and prints the sum of all its elements.
+
+Example: Given [1, 2, 3, 4, 5], the output should be 15.
+Average of Array Elements
+Write a program to calculate the average of the elements in an array of integers.
+
+Example: Given [10, 20, 30, 40, 50], the output should be 30.
+Find the Maximum Value
+Write a program that finds and prints the maximum value in an array of integers.
+
+Example: Given [7, 3, 9, 5, 1], the output should be 9.
+Count Even and Odd Numbers
+Write a program that counts the number of even and odd numbers in an array of integers.
+
+Example: Given [2, 5, 8, 13, 7], the output should be Evens: 2, Odds: 3.
+Reverse an Array
+Write a program that reverses an array of integers and prints the reversed array.
+
+Example: Given [1, 2, 3, 4, 5], the output should be [5, 4, 3, 2, 1].
+
+
+Medium 
+
+2-Sum Problem (Classic)
+Write a program that finds two numbers in an array that add up to a specific target. Print the indices of the two numbers.
+
+Example: Given [2, 7, 11, 15] and target 9, the output should be Indices: 0, 1.
+
+1. Fibonacci with Cache
+Write a program to compute the Fibonacci sequence using a cache (also known as memoization). Store previously computed Fibonacci numbers in an array (or a HashMap) to avoid redundant calculations.
+
+Problem: Compute the nth Fibonacci number, where fib(n) = fib(n-1) + fib(n-2) and fib(0) = 0, fib(1) = 1.
+Hint: Use an array to store previously computed Fibonacci values.
+Example: fib(6) should return 8 (sequence: 0, 1, 1, 2, 3, 5, 8).
+
+2. Factorial with Cache
+Write a program that calculates the factorial of a number using a cache to avoid redundant calculations.
+
+Problem: Compute n! = n * (n-1) * (n-2) * ... * 1. Use a HashMap to store previously computed factorials.
+Hint: If the factorial of a number has already been computed, retrieve it from the cache.
+Example: factorial(5) should return 120.
