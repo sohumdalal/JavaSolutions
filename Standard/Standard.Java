@@ -87,4 +87,39 @@ public class Standard {
      }
      return output;
     }
+
+    public static boolean isFactorOf (int factor, int multiple) {
+        if(multiple % factor == 0) return true;
+        return false;
+    }
+
+    public static int getGreatestCommonFactor(int a, int b) {
+        int output = 0;  
+        int test = 1;   
+
+        while (test <= a && test <= b) {  
+            if (isFactorOf(a, test) && isFactorOf(b, test)) {
+                output = test;  
+            }
+            test++; 
+        }
+
+        return output;
+    }
+
+    public static String isPrime (int num) {
+        
+        if (num < 2) {
+            return "Not a prime";
+        }
+
+        for(int i = 2; i < num; i++) {
+            if(num % i == 0) return "This is a prime number";
+        }
+
+
+        return "Not a prime";
+    }
+
+
 }
