@@ -88,8 +88,8 @@ public class Standard {
      return output;
     }
 
-    public static boolean isFactorOf (int factor, int multiple) {
-        if(multiple % factor == 0) return true;
+    public static boolean isFactorOf (int num, int test) {
+        if(num % test == 0) return true;
         return false;
     }
 
@@ -114,11 +114,11 @@ public class Standard {
         }
 
         for(int i = 2; i < num; i++) {
-            if(num % i == 0) return "This is a prime number";
+            if(num % i == 0) return "Not a prime";
         }
 
 
-        return "Not a prime";
+        return "is a Prime";
     }
 
 
