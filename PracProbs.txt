@@ -16,16 +16,12 @@ Example: Given [7, 3, 9, 5, 1], the output should be 9.
 Write a program that counts the number of even and odd numbers in an array of integers.
 Example: Given [2, 5, 8, 13, 7], the output should be Evens: 2, Odds: 3.
 
--Reverse an Array
-Write a program that reverses an array of integers and prints the reversed array.
-Example: Given [1, 2, 3, 4, 5], the output should be [5, 4, 3, 2, 1].
+
 
 
 Medium 
 
--2-Sum Problem (Classic)
-Write a program that finds two numbers in an array that add up to a specific target. Print the indices of the two numbers.
-Example: Given [2, 7, 11, 15] and target 9, the output should be Indices: 0, 1.
+
 
 Harder
 
@@ -36,5 +32,39 @@ The nth Fibonacci number can be written as fib(n) = fib(n-1) + fib(n-2) ... and 
 Note that: fib(0) = 0, fib(1) = 1. Example: fib(6) should return 8 (sequence: 0, 1, 1, 2, 3, 5, 8).
 
 -Factorial with Cache
-Write a program that calculates the factorial of a number using a cache to avoid redundant calculations.
+Write a program that calculates the factorial 
  n! = n * (n-1) * (n-2) * ... * 1. factorial(5) should return 120.
+
+-Palindrome
+Problem: Write a method isPalindrome(String str) that checks if a given string str is a palindrome. A palindrome is a word that reads the same forwards and backwards.
+Example: isPalindrome("racecar") should return true.
+
+-Char counter
+Write a method that takes a string and a character, then counts how many times the character appears in the string.
+
+-2-Sum Problem (Classic)
+Write a program that finds two numbers in an array that add up to a specific target. Print the indices of the two numbers.
+Example: Given [2, 7, 11, 15] and target 9, the output should be Indices: 0, 1.
+
+-Reverse an Array
+Write a program that reverses an array of integers and prints the reversed array.
+Example: Given [1, 2, 3, 4, 5], the output should be [5, 4, 3, 2, 1].
+
+
+
+ 10/30
+ -Factorial (DONE)
+ -Palindrome (DONE)
+ -Fibonacci (DONE)
+ -Char Counter
+ -2 Sum
+ -Reverse Array
+
+ 10! = 5 * 4 * 3 * 2 * 1 = 
+ 
+ program input: number
+ output: a calculation such that fib(6) --> 8
+0 1 1 2 3 5 8
+
+
+
