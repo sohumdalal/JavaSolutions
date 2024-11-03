@@ -5,6 +5,7 @@ import java.io.File;
 import java.util.HashMap;
 
 
+
 public class Standard {
 
     //used in Mathfunc
@@ -90,6 +91,9 @@ public class Standard {
      return output;
     }
 
+
+
+    //Practice Problem Solutions
     public static boolean isFactorOf (int num, int test) {
         if(num % test == 0) return true;
         return false;
@@ -184,9 +188,6 @@ public class Standard {
         }
     }
 
-
-
-    public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         
@@ -203,13 +204,75 @@ public class Standard {
         throw new IllegalArgumentException("No two sum solution");
     }
 
-    public static void main(String[] args) {
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
-        int[] result = twoSum(nums, target);
-        System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
+    public static int sumArray (int [] nums) {
+        
+        int sum = 0;
+        for (int i = 0; i < nums. length; i++) {
+            sum += nums[i];
+        }
+        return sum;
+    }
+ 
+    public static int avgArray (int [] nums) {
+        int sum = sumArray(nums);
+        int average = sum / nums.length;
+        return average;
+    }
+
+    public static double maxArray (double [] nums) {
+        double max = Double.NEGATIVE_INFINITY;
+        for (int i = 0 ; i < nums.length; i++) {
+            if (nums[i] > max) {
+                max = nums[i];
+            }
+        }
+        return max;
+
+    }
+
+    public static String[] countEvenOdd (int [] nums) {
+        int evenCount = 0;
+        int oddCount = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) {
+                evenCount++;
+            }
+            else {
+                oddCount++;
+            }
+        }
+        String[] result = new String[2];
+        result[0] = "Evens count: " + evenCount;
+        result[1] = "Odd count: " + oddCount;
+    
+        return result;
+
+    }
+
+    public static int fibCacheHelper(int number, HashMap<Integer, Integer> fibMap) {
+        // Base cases
+        if (number <= 1) {
+            return number; 
+        }
+        
+        // Check if the value is already computed
+        if (fibMap.containsKey(number)) {
+            return fibMap.get(number);
+        }
+
+        // Recursive computation with caching
+        int result = fibCacheHelper(number - 1, fibMap) + fibCacheHelper(number - 2, fibMap);
+        fibMap.put(number, result); // Cache the result
+
+        return result;
+    }
+
+    public static int fibCache(int number) {
+        HashMap<Integer, Integer> fibMap = new HashMap<>();
+        return fibCacheHelper(number, fibMap);
     }
 }
 
-}
+
 
